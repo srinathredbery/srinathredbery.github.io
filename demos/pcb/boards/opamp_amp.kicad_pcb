@@ -1,0 +1,16 @@
+(kicad_pcb (version 20211014) (generator pcbnew)
+  (general
+    (thickness 1.6)
+  )
+  (paper "A4")
+  (layers
+    (0 "F.Cu" signal)
+    (31 "B.Cu" signal)
+    (44 "Edge.Cuts" user)
+  )
+  (gr_line (start 80 80) (end 120 80) (layer "Edge.Cuts") (width 0.1))
+  (gr_line (start 120 80) (end 120 140) (layer "Edge.Cuts") (width 0.1))
+  (gr_line (start 120 140) (end 80 140) (layer "Edge.Cuts") (width 0.1))
+  (gr_line (start 80 140) (end 80 80) (layer "Edge.Cuts") (width 0.1))
+  (gr_text "OpAmp Amplifier" (at 100 110) (layer "F.Cu") (effects (font (size 2 2) (thickness 0.2))))
+)
