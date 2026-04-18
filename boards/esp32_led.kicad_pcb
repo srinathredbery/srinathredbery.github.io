@@ -1,0 +1,194 @@
+(kicad_pcb
+ (version 20221018)
+ (generator pcbnew)
+
+ (general
+  (thickness 1.6)
+ )
+
+ (paper "A4")
+
+ (layers
+  (0 "F.Cu" signal)
+  (31 "B.Cu" signal)
+  (36 "B.SilkS" user)
+  (37 "F.SilkS" user)
+  (44 "Edge.Cuts" user)
+ )
+
+ (setup
+  (pad_to_mask_clearance 0)
+ )
+
+ (net 0 "")
+ (net 1 "GND")
+ (net 2 "VCC")
+ (net 3 "LED_SIG")
+
+ (gr_rect
+  (start 0 0)
+  (end 80 50)
+  (layer "Edge.Cuts")
+  (width 0.1)
+ )
+
+ (gr_text "AI PCB DEMO"
+  (at 30 5)
+  (layer "F.SilkS")
+  (effects (font (size 2 2) (thickness 0.3)))
+ )
+
+ (gr_text "ESP32 LED Controller"
+  (at 20 45)
+  (layer "F.SilkS")
+  (effects (font (size 1.5 1.5) (thickness 0.2)))
+ )
+
+ (footprint "Package_DIP:DIP-8_W7.62mm"
+  (layer "F.Cu")
+  (at 30 25)
+
+  (property "Reference" "U1"
+   (at 0 -3)
+   (layer "F.SilkS")
+  )
+
+  (property "Value" "LM358"
+   (at 0 10)
+   (layer "F.Fab")
+  )
+
+  (pad "1" thru_hole rect
+   (at -3.81 -3.81)
+   (size 1.6 1.6)
+   (drill 0.8)
+   (layers *.Cu *.Mask)
+   (net 3)
+  )
+
+  (pad "2" thru_hole circle
+   (at -3.81 -1.27)
+   (size 1.6 1.6)
+   (drill 0.8)
+   (layers *.Cu *.Mask)
+   (net 1)
+  )
+
+  (pad "3" thru_hole circle
+   (at -3.81 1.27)
+   (size 1.6 1.6)
+   (drill 0.8)
+   (layers *.Cu *.Mask)
+   (net 2)
+  )
+
+  (pad "4" thru_hole circle
+   (at -3.81 3.81)
+   (size 1.6 1.6)
+   (drill 0.8)
+   (layers *.Cu *.Mask)
+   (net 1)
+  )
+ )
+
+ (footprint "LED_THT:LED_D5.0mm"
+  (layer "F.Cu")
+  (at 60 25)
+
+  (property "Reference" "D1"
+   (at 0 -3)
+   (layer "F.SilkS")
+  )
+
+  (property "Value" "LED"
+   (at 0 3)
+   (layer "F.Fab")
+  )
+
+  (pad "1" thru_hole rect
+   (at -1.27 0)
+   (size 1.8 1.8)
+   (drill 0.9)
+   (layers *.Cu *.Mask)
+   (net 3)
+  )
+
+  (pad "2" thru_hole circle
+   (at 1.27 0)
+   (size 1.8 1.8)
+   (drill 0.9)
+   (layers *.Cu *.Mask)
+   (net 1)
+  )
+ )
+
+ (footprint "Resistor_THT:R_Axial_DIN0207"
+  (layer "F.Cu")
+  (at 45 25)
+
+  (property "Reference" "R1"
+   (at 0 -2)
+   (layer "F.SilkS")
+  )
+
+  (property "Value" "330R"
+   (at 0 2)
+   (layer "F.Fab")
+  )
+
+  (pad "1" thru_hole circle
+   (at -5 0)
+   (size 1.6 1.6)
+   (drill 0.8)
+   (layers *.Cu *.Mask)
+   (net 3)
+  )
+
+  (pad "2" thru_hole circle
+   (at 5 0)
+   (size 1.6 1.6)
+   (drill 0.8)
+   (layers *.Cu *.Mask)
+   (net 1)
+  )
+ )
+
+ (segment
+  (start 33 25)
+  (end 40 25)
+  (width 0.5)
+  (layer "F.Cu")
+  (net 3)
+ )
+
+ (segment
+  (start 50 25)
+  (end 58 25)
+  (width 0.5)
+  (layer "F.Cu")
+  (net 3)
+ )
+
+ (via
+  (at 20 20)
+  (size 1.2)
+  (drill 0.6)
+  (layers "F.Cu" "B.Cu")
+  (net 1)
+ )
+
+ (zone
+  (net 1)
+  (layer "B.Cu")
+  (hatch edge 0.5)
+
+  (polygon
+   (pts
+    (xy 1 1)
+    (xy 79 1)
+    (xy 79 49)
+    (xy 1 49)
+   )
+  )
+ )
+)
